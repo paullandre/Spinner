@@ -218,13 +218,8 @@ input[type="button"] {
 					<div class="fancy">
 						<ul class="slot">
 							<!-- In reverse order so the 7s show on load -->							
-							<!--<li><span>5</span></li>
-							<li><span>4</span></li>
-							<li><span>3</span></li>
-							<li><span>2</span></li>
-							<li><span>1</span></li>-->
 							<?php
-								for($x = 5; $x >= 1; $x--)
+								for($x = 7; $x >= 1; $x--)
 								{
 									?>
 									<li><span><?php echo $x; ?></span></li>
@@ -257,13 +252,13 @@ input[type="button"] {
         // normal example
         $('.normal .slot').jSlots({
             spinner : '#playNormal',
-            winnerNumber : 8
+            winnerNumber : 7
         });
 
 
         // fancy example
         $('.fancy .slot').jSlots({
-            number : 8,
+            number : 7,
             winnerNumber : 1,
             spinner : '#playFancy',
             easing : 'easeOutSine',
